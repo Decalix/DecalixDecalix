@@ -1,7 +1,0 @@
----
-
-- hosts: "{{HOST.IP}}"
-  gather_facts: false
-  tasks:
-    - ping:
-    - setup:
