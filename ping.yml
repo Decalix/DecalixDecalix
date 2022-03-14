@@ -1,6 +1,6 @@
 ---
 
-- hosts: "{{ srcIP }}"
+- hosts: "{{ desIP }}"
   gather_facts: false
   tasks:
     - ping:
