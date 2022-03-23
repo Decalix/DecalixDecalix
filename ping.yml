@@ -11,5 +11,5 @@
     - name: Ping Destination
       routeros_command:
         commands:
-          - "/ping count=10 destIP"
+          - "/ping count=10 {destIP}"
       register: pings
