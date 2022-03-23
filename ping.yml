@@ -1,10 +1,11 @@
 ---
 
-- hosts: desIP
+- hosts: all
   gather_facts: false
   tasks:
     - name: ping-01
       ping:
+        dest: 192.168.30.10
   
    
 
