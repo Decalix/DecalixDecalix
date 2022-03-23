@@ -4,6 +4,6 @@
   gather_facts: false
   tasks:
     - name: ping-01
-      net_ping:
+      cisco.ios.ios_ping:
         dest: 192.168.30.10
 
