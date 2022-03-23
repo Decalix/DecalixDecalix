@@ -1,15 +1,5 @@
 ---
 
-- name: Reach out to remote probes and troubleshoot routing
-  hosts: all
-  gather_facts: no
-  vars:
-    ansible_command_timeout: 120
-
-  tasks:
-
-    - name: Ping Destination
-      routeros_command:
-        commands:
-          - "/ping count=10 {destIP}"
-      register: pings
+- name: Test reachability to 10.10.10.10 using default vrf
+  net_ping:
+    dest: 192.168.30.10
