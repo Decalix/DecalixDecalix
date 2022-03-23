@@ -1,5 +1,9 @@
 ---
 
-- name: Test reachability to 10.10.10.10 using default vrf
-  net_ping:
-    dest: 192.168.30.10
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: ping-01
+      net_ping:
+        dest: 192.168.30.10
+
