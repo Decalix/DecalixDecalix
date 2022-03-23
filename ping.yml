@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: ping-01
-      ansible.netcommon.net_ping:
+      ping:
         dest: 192.168.30.10
   
    
