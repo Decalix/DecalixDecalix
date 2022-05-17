@@ -1,10 +1,16 @@
 ---
+- hosts: ips
+  gather_facts: no
+  conexión: network_cli
 
-- hosts: "destIP"
-  gather_facts: false
-  tasks:
-    - name: ping-01
-      ping:
   
-   
+  tareas:
+   - nombre: Mostrar interfaces 
+     ios_command:
+       
+       comandos: 
+         - mostrar ip int b
+     registro: interfaz
+
+   - depurar: var=interface.stdout_lines
 
