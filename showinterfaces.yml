@@ -2,10 +2,10 @@
 
 - name: Running show commands on Cisco IOS
   hosts: all
-  gather_facts: no
-  connection: network_cli
+  gather_facts: false
   vars:
     ansible_network_os: ios
+    ansible_connection: network_cli
 
   tasks:
     - name: Run a priviledged show command on Cisco IOS nodes
