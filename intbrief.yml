@@ -6,7 +6,8 @@
   tasks:
     - name: Run multiple commands on Cisco IOS nodes
       ios_command:
-        commands: show ip int brief
+        commands: 
+          - show ip int brief
       register: print_output
     - name: Debug registered var
       debug: var=print_output.stdout_lines
