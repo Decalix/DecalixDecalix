@@ -1,5 +1,5 @@
 ---
-- hosts: ips
+- hosts: all
   gather_facts: no
   conexión: network_cli
 
