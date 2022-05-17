@@ -7,7 +7,7 @@
   vars:
     ansible_network_os: ios
 
-tasks:
+  tasks:
     - name: Run a priviledged show command on Cisco IOS nodes
       ios_command:
         commands:
